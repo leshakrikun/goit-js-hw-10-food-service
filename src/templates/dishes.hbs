@@ -10,12 +10,16 @@
             {{this.price}} кредитов
         </p>
         <p class="card__descr">{{this.description}}</p>
-        <p class="tag-list"></p>
-    </article>
-
-
-
-
-</div>    
+        <ul class="tag-list">
+            {{#each ingredients}}
+                <li class="tag-list__item">{{this}}</li>
+            {{/each}}
+        </ul>
+    </div>   
+    <button class="card__button button">
+        <i class="material-icons button__icon"> shopping_cart </i>
+        В корзину
+        </button>
+    </article> 
 </li>
 {{/each}}
