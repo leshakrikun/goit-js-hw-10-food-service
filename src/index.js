@@ -16,7 +16,7 @@ document.querySelector('.js-menu').innerHTML = dishesHTML
 
 const currentTheme = document.querySelector('body');
 const themeSwitcher = document.querySelector('#theme-switch-toggle');
-
+currentTheme.classList.add(Theme.LIGHT);
 
 
 const lightThemeFunc = () => {
